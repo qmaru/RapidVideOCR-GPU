@@ -1,6 +1,4 @@
 # -*- encoding: utf-8 -*-
-# @Author: SWHL
-# @Contact: liekkaskono@163.com
 import argparse
 from pathlib import Path
 from typing import Optional
@@ -10,7 +8,7 @@ try:
     from .rapid_videocr import RapidVideOCR
     from .utils import float_range
     from .video_sub_finder import VideoSubFinder
-except:
+except BaseException:
     from logger import logger
     from utils import float_range
     from video_sub_finder import VideoSubFinder

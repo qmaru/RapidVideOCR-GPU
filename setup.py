@@ -1,6 +1,4 @@
 # -*- encoding: utf-8 -*-
-# @Author: SWHL
-# @Contact: liekkaskono@163.com
 import sys
 from pathlib import Path
 from typing import List
@@ -26,7 +24,7 @@ def get_readme() -> str:
     return readme
 
 
-MODULE_NAME = "rapid_videocr"
+MODULE_NAME = "rapid_videocr_gpu"
 
 obtainer = GetPyPiLatestVersion()
 latest_version = obtainer(MODULE_NAME)
@@ -47,9 +45,8 @@ setuptools.setup(
     description="Tool for extracting hard subtitles from videos.",
     long_description=get_readme(),
     long_description_content_type="text/markdown",
-    author="SWHL",
-    author_email="liekkaskono@163.com",
-    url="https://github.com/SWHL/RapidVideOCR.git",
+    author="qmaru",
+    url="https://github.com/qmaru/RapidVideOCR-GPU.git",
     license="Apache-2.0",
     include_package_data=True,
     install_requires=read_txt("requirements.txt"),

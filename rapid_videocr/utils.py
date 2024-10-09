@@ -1,6 +1,4 @@
 # -*- encoding: utf-8 -*-
-# @Author: SWHL
-# @Contact: liekkaskono@163.com
 import argparse
 from enum import Enum
 from pathlib import Path

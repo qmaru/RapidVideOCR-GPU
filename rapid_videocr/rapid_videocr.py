@@ -1,19 +1,17 @@
 # -*- encoding: utf-8 -*-
-# @Author: SWHL
-# @Contact: liekkaskono@163.com
 import argparse
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Union
 
 import cv2
 import numpy as np
-from rapidocr_onnxruntime import RapidOCR
+from rapidocr_paddle import RapidOCR
 from tqdm import tqdm
 
 try:
     from .logger import logger
     from .utils import CropByProject, compute_poly_iou, is_inclusive_each_other, mkdir
-except:
+except BaseException:
     from logger import logger
     from utils import CropByProject, compute_poly_iou, is_inclusive_each_other, mkdir
 
