@@ -16,7 +16,6 @@ setuptools.setup(
     install_requires=[
         "tqdm",
         "rapidocr_paddle",
-        "paddlepaddle-gpu @ https://www.paddlepaddle.org.cn/packages/stable/cu123/",
     ],
     packages=[MODULE_NAME],
     package_data={"": ["*.yaml"]},
