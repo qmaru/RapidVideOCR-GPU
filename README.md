@@ -4,6 +4,12 @@
 
 详情参考 [RapidOCRDocs](https://rapidai.github.io/RapidOCRDocs/install_usage/rapidocr_paddle/usage/)
 
+## 安装
+
+```shell
+pip install git+https://github.com/qmaru/RapidVideOCR-GPU.git
+```
+
 ## 使用方法
 
 与原项目完全一致。
